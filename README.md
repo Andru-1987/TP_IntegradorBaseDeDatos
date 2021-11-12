@@ -2,11 +2,11 @@
 Integrador de Base de Datos IFTS18
 
 Integrantes :
-  Oriana Rosas
-    Yamila Villarnovo
-      Javier García 
-        Alberto {Inserte Apellido}
-          Anderson Ocaña
+  * Oriana Rosas
+  * Yamila Villarnovo
+  * Javier García 
+  * Alberto {Inserte Apellido}
+  * Anderson Ocaña
  
 Instrucciones
 Defina las condiciones y requerimientos del sistema que quiere presentar del cual necesitará entregar lo mencionado en el PDF adjunto.
