@@ -1,0 +1,2 @@
+1) Creacion de Base de datos con las tablas y conexiones de FK's
+2) Data random para funcionar, data creada por medio de https://www.mockaroo.com/
