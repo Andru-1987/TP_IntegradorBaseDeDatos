@@ -1,6 +1,4 @@
 
-
-
 -- CREACION DE LA BASE DE DATOS DEL LOCAL
 CREATE DATABASE  
 IF NOT EXISTS LOCAL_LAGOT CHARACTER SET UTF8mb4 COLLATE utf8mb4_general_ci;
@@ -53,7 +51,7 @@ REFERENCES admin_usuarios(idUsuario);
 CREATE TABLE IF NOT EXISTS producto
 (	idProducto INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	idProveedor INT NOT NULL,
-	idCategoria INT NOT NULL,
+	idCategoria TINYINT NOT NULL,
 	idTemporada TINYINT NOT NULL,
 	idTarget TINYINT NOT NULL,
 	precioCompra FLOAT NOT NULL,
@@ -203,3 +201,35 @@ CREATE TABLE IF NOT EXISTS tipoDeEnvio
 (	idTipoDeEnvio TINYINT NOT NULL PRIMARY KEY AUTO_INCREMENT,
 	tipoDeEnvio VARCHAR(50) NOT NULL);
 
+
+
+
+-- CREACION DE LAS CONSTRAINT Y FK DE CADA TABLA RESPECTIVAMENTE
+
+-- CREACION EN LA TABLA PRODUCTO:
+LAS FK SON: 
+		FK	idProveedor -> 	TABLA: 	proveedor
+		FK	idCategoria -> 	TABLA:	categoria
+		FK	idTemporada ->	TABLA:	temporada
+		FK	idTarget	->	TABLA:	target
+
+ALTER TABLE	producto
+ADD 
+CONSTRAINT FK_Proveedor_ID FOREIGN KEY (idProveedor)
+REFERENCES proveedor(idProveedor);
+
+
+ALTER TABLE	producto
+ADD 
+CONSTRAINT FK_Categoria_ID FOREIGN KEY (idCategoria)
+REFERENCES categoria(idCategoria);
+
+ALTER TABLE	producto
+ADD 
+CONSTRAINT FK_Temporada_ID FOREIGN KEY (idTemporada)
+REFERENCES temporada(idTemporada);
+
+ALTER TABLE	producto
+ADD 
+CONSTRAINT FK_Target_ID FOREIGN KEY (idTarget)
+REFERENCES target(idTarget);
