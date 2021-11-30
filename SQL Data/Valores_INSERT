@@ -209,9 +209,16 @@
 			('Misc');
 
 -- DATA STATUS DE ENTREGA 1-6
-	
-	
-
+	INSERT INTO statusDeEntrega
+				(statusDeEntrega)
+				VALUES
+				('En Transito'),
+				('Bodega'),
+				('Entregado'),
+				('Rechazado'),
+				('Transferido'),
+				('MISC');
+							
 
 -- DATA TIPO DE ENVIO 1-6
  INSERT INTO tipoDeEnvio
