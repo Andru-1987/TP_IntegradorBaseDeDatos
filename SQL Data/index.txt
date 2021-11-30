@@ -1,4 +1,4 @@
 En este sector tenemos los siguientes pasos:
   1) DB_LOCAL_LAGOT.sql El cual crea la base de datos, las tablas y hace las conexiones entre las claves foráneas.
-  2) IGRESO_DATA.sql Este archivo nos permite llenar con datos ficticios la base de datos para correr pruebas.
-  3) adminUSERS Este archivo nos permite generar usuarios de administacion, también random, con el propósito de seguir pruebas.
+  2) IGRESO_DATA.sql Este archivo nos permite llenar con datos ficticios la base de datos para correr pruebas. Datos creados por https://www.mockaroo.com/
+  3) adminUSERS Este archivo nos permite generar usuarios de administacion, también random, con el propósito de seguir pruebas. Datos creados por https://www.mockaroo.com/
