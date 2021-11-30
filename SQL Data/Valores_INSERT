@@ -1,5 +1,5 @@
 
--- DATA CATEGORIAS 1-9
+-- 1 DATA CATEGORIAS 1-9
 	INSERT INTO categoria
 				(categoria)
 				VALUES 
@@ -13,7 +13,7 @@
 				('Campera'),
 				('Misc');
 
--- DATA TEMPORADA 1-4
+-- 2 DATA TEMPORADA 1-4
 	INSERT INTO temporada
 				(temporada)
 				VALUES 
@@ -22,7 +22,7 @@
 				('Invierno'),
 				('Primavera');
 
--- DATA TARGET 1-8
+-- 3 DATA TARGET 1-8
 	INSERT INTO target
 				(target)
 				VALUES 
@@ -33,7 +33,7 @@
 				('Mayores Masculino'),
 				('Mayores Femenino');
 
--- DATA PROVEEDOR 1-20
+-- 4 DATA PROVEEDOR 1-20
 	INSERT INTO proveedor
 		(cuit ,
 		fechaHoraDeAlta,
@@ -63,7 +63,7 @@
 	('1503502724', '2001-11-12 19:18:51', 'Dew Scandred', '9942668424', '9227 Vermont Street', 'dscandredi@hostgator.com'),
 	('4602275338', '2017-01-26 05:24:20', 'Ninnetta Reape', '2509209536', '95 Victoria Drive', 'nreapej@wikia.com');
 
--- DATA PRODUCTOS 1-100
+-- 5 DATA PRODUCTO 1-100
 
 	INSERT INTO producto 
 			(idProveedor,
@@ -181,22 +181,22 @@
 	(15, 4, 4, 3, 507.7, 710.78, 'Gutmann, Thiel and Fritsch', 'XL', 124, 'https://robohash.org/doloribusplaceataccusamus.png?size=50x50&set=set1', false, '2022-05-24', true),
 	(12, 2, 4, 2, 1187.03, 1661.842, 'Douglas, Cummerata and White', 'M', 270, 'https://robohash.org/voluptasnecessitatibuspariatur.png?size=50x50&set=set1', true, '2021-12-13', false);
 
--- DATA MOTIVOS 1-10
-	INSERT INTO motivos
-				(motivos)
+-- 6 DATA MOTIVOS 1-10
+	INSERT INTO motivo
+				(nombreMotivo)
 				VALUES 
-		('justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare'),
-		('nisl ut volutpat sapien arcu sed augue aliquam erat volutpat in'),
-		('odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam'),
-		('aliquam augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer'),
-		('neque duis bibendum morbi non quam nec dui luctus rutrum nulla tellus in sagittis dui vel nisl duis ac nibh'),
-		('nec nisi volutpat eleifend donec ut dolor morbi vel lectus in quam fringilla rhoncus mauris enim leo rhoncus sed vestibulum'),
-		('pede posuere nonummy integer non velit donec diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante'),
-		('eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus aenean fermentum donec ut mauris eget'),
-		('vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id'),
-		('massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea');
+				('justo sollicitudin ut suscipit a feugiat'),
+				('nisl ut volutpat sapien arcu sed augue'),
+				('odio justo sollicitudin ut suscipit a'),
+				('aliquam augue quam sollicitudin vitae'),
+				('neque duis bibendum morbi non quam '),
+				('nec nisi volutpat eleifend donec ut'),
+				('pede posuere nonummy integer non velit'),
+				('eros suspendisse accumsan tortor quis'),
+				('vel augue vestibulum rutrum rutrum '),
+				('massa donec dapibus duis at velit eu');
 
--- DATA MEDIO DE PAGO 1-7
+-- 7 DATA MEDIO DE PAGO 1-7
 	INSERT INTO medioDePago
 			(medioDePago)
 			VAlUES
@@ -208,7 +208,7 @@
 			('Transferencia'),
 			('Misc');
 
--- DATA STATUS DE ENTREGA 1-6
+-- 8 DATA STATUS DE ENTREGA 1-6
 	INSERT INTO statusDeEntrega
 				(statusDeEntrega)
 				VALUES
@@ -220,7 +220,7 @@
 				('MISC');
 							
 
--- DATA TIPO DE ENVIO 1-6
+-- 9 DATA TIPO DE ENVIO 1-6
  INSERT INTO tipoDeEnvio
  			(tipoDeEnvio)
  			VALUES
@@ -231,50 +231,23 @@
  			('VIP'),
  			('Otro');
 
--- DATA LOGISTICA 1-10 
+-- 10 DATA LOGISTICA 1-10 
 	INSERT INTO logistica
-	(tipoDeEnvio,nombreEmpresa,maximoCarga)
+	(idTipoDeEnvio,nombreEmpresa,maximoCarga)
 	VALUES
 	(4, 'Caduet', 2249),
-	(1, 'PHYSICIANS CARE STING RELIEF PAD', 3713),
-	(4, 'Triple Antibiotic', 1919),
+	(1, 'PHYSICIANS', 3713),
+	(4, 'Triple ', 1919),
 	(6, 'Nitrogen', 2802),
-	(4, 'Metformin Hydrochloride', 4807),
+	(4, 'Metformin ', 4807),
 	(4, 'Ibuprofen', 1644),
-	(2, 'NITROUS OXIDE', 3753),
-	(1, 'Mouse Epithelium', 2315),
-	(5, 'Clearasil PerfectaWash', 4534),
-	(3, 'cyclobenzaprine hydrochloride', 1852);
+	(2, 'NITROUS ', 3753),
+	(1, 'Mouse ', 2315),
+	(5, 'Clearasil ', 4534),
+	(3, 'cyclobenzaprine', 1852);
 
--- DATA FACTURA 1-20
-	INSERT INTO factura
-			(idMedioDePago,
-			idPedido,
-			fechaHoraFacturacion,
-			descripcion)
-			VAlUES
-			(4, 7, '2021-11-27 13:35:12', 'Morbi vel lectus in quam fringilla rhoncus. Mauris enim leo, rhoncus .'),
-			(4, 10, '2021-06-18 00:31:14', 'Praesent id massa id nisl venenatis lacinia.'),
-			(2, 3, '2021-11-08 01:39:48', 'Fusce posuere felis sed lacus.'),
-			(5, 2, '2021-06-28 18:46:22', 'Aliquam erat volutpat.'),
-			(2, 8, '2021-02-23 23:13:28', 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.'),
-			(1, 8, '2021-08-15 03:21:16', 'Donec posuere metus vitae ipsum. Aliquam non mauris.'),
-			(7, 6, '2021-11-24 13:02:34', 'In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, '),
-			(5, 4, '2021-11-01 07:49:10', 'Mauris lacinia sapien quis libero.'),
-			(1, 7, '2021-10-01 19:21:29', 'Maecenas pulvinar lobortis est.'),
-			(6, 8, '2021-07-30 16:59:16', 'Integer tincidunt ante vel ipsum.'),
-			(4, 9, '2021-04-11 08:05:08', 'Phasellus id sapien in sapien iaculis congue.'),
-			(3, 2, '2021-11-14 06:15:22', 'Ut tellus. Nulla ut erat id mauris vulputate elementum.'),
-			(3, 4, '2021-04-14 11:11:20', 'Morbi vestibulum, velit id pretium iaculis, diam erat'),
-			(7, 5, '2021-07-20 15:38:09', 'Vestibulum ac est lacinia nisi venenatis tristique.'),
-			(5, 4, '2021-01-29 17:49:17', 'Suspendisse potenti. Nullam porttitor lacus at turpis.'),
-			(1, 5, '2021-04-10 19:24:00', 'Praesent lectus. Vestibulum quam sapien, varius ut, blandit non, interdum in, ante.'),
-			(4, 6, '2021-01-29 16:11:42', 'Morbi vestibulum, velit id pretium iaculis, diam erat fermentum justo,'),
-			(6, 1, '2021-03-08 03:31:33', 'In eleifend quam a odio. In hac habitasse platea dictumst.'),
-			(2, 6, '2021-08-04 09:21:13', 'Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.'),
-			(2, 10, '2021-08-25 07:32:53', 'Nullam porttitor lacus at turpis.');
 
--- DATA TIPO DE CLIENTE 1-5
+-- 11 DATA TIPO DE CLIENTE 1-5
 	INSERT INTO tipoDeCliente
 				(tipoDeCliente)
 				VALUES
@@ -284,7 +257,7 @@
 				('Minorista'),
 				('Misc');
 
--- DATA CLIENTE  1-20
+-- 12 DATA CLIENTE  1-20
 	INSERT	INTO cliente
 			(idTipoDeCliente,
 			razonSocial,
@@ -298,7 +271,7 @@
 			foto,
 			dni,
 			email,
-			codigoPostal);
+			codigoPostal)
 			VALUES
 			(5, 'Treeflex', 'Nels', 'Charrington', '6 Manley Road', '1992-12-29', '2017-01-03 09:27:24', 'LDvRlH', '2978201991', 'https://robohash.org/sedcorporisquia.png?size=50x50&set=set1', '5531456611', 'ncharrington0@imageshack.us', '40230'),
 			(1, 'Greenlam', 'Araldo', 'Osmar', '8614 Oak Lane', '1990-01-11', '2017-08-03 01:04:52', 'JJvlQYr', '5246646572', 'https://robohash.org/eteaat.png?size=50x50&set=set1', '6325162366', 'aosmar1@soundcloud.com', '2806'),
@@ -331,7 +304,7 @@
 			(4, 'Solarbreeze', 'Michele', 'Foucar', '5 Summer Ridge Junction', '1991-10-07', '2019-12-21 05:57:13', 'o8UpTXFPQf', '1212528824', 'https://robohash.org/oditveritatisqui.png?size=50x50&set=set1', '9820759056', 'mfoucars@mozilla.com', '3917'),
 			(2, 'Stronghold', 'Gwenore', 'Crankshaw', '5246 Lien Avenue', '1989-05-05', '2021-10-31 01:30:56', 'w6kPWpe', '3610757957', 'https://robohash.org/deseruntquaslaborum.png?size=50x50&set=set1', '2909770923', 'gcrankshawt@domainmarket.com', null);
 
--- DATA VENDEDOR 1-30
+-- 13 DATA VENDEDOR 1-30
 	INSERT INTO vendedor
 			(nombre,
 			apellido,
@@ -343,38 +316,39 @@
 			fechaDeNacimiento,
 			salario)
 			VALUES
-			('Antoni', 'O''Dea', 63360845, '2017-07-22', '1958-06-03', 59923),
-			('Tamera', 'Husk', 54713861, '2018-01-25', '1984-04-02', 60798),
-			('Mordecai', 'Mitchard', 35686248, '2020-08-26', '1994-11-10', 43128),
-			('Renelle', 'Kellock', 60619673, '2021-11-02', '1966-06-10', 45374),
-			('Kaile', 'Deathridge', 64057787, '2021-06-18', '1995-11-15', 68560),
-			('Gaspard', 'Jablonski', 29187980, '2018-01-16', '1975-03-20', 62946),
-			('Sean', 'Maffey', 69168742, '2021-09-24', '1966-10-25', 62511),
-			('Sloan', 'Twyning', 33143486, '2020-01-01', '1967-08-29', 54054),
-			('Seth', 'Learie', 78929164, '2021-06-07', '1965-04-27', 49977),
-			('Aurilia', 'Chaundy', 81824434, '2019-10-22', '1967-02-10', 46906),
-			('Boigie', 'Evesque', 56955541, '2021-03-31', '1958-12-05', 46952),
-			('Wilton', 'Pendrick', 58795424, '2021-10-04', '1968-12-09', 57209),
-			('Julie', 'Vasyushkhin', 55270019, '2017-03-21', '1991-03-27', 41308),
-			('Rourke', 'Canet', 40238080, '2018-06-23', '1970-03-10', 58987),
-			('Jamil', 'Kalinke', 31156874, '2018-07-14', '1975-08-11', 44307),
-			('Jemmie', 'Andreone', 40373678, '2019-07-23', '1979-04-09', 59322),
-			('Janette', 'Pettifor', 33714709, '2019-08-21', '1978-04-21', 65679),
-			('Silvain', 'Bollini', 49871163, '2019-03-11', '1962-01-28', 56821),
-			('Jackelyn', 'Bernardeau', 74213111, '2017-02-18', '1966-07-05', 67583),
-			('Ashlee', 'Mapham', 36908658, '2017-11-01', '1980-02-18', 51678),
-			('Boony', 'Arnald', 28027453, '2017-05-02', '1969-08-24', 69464),
-			('Pauli', 'Gwilt', 38684971, '2020-11-30', '1971-08-28', 41751),
-			('Hilario', 'Shaughnessy', 83615338, '2017-11-09', '1958-06-27', 49274),
-			('Doralia', 'Mearing', 30971051, '2020-06-28', '1964-11-30', 43228),
-			('Libby', 'Fincken', 83715873, '2020-01-29', '1985-02-01', 45472),
-			('Osborne', 'Gapp', 31035051, '2019-02-08', '1990-06-19', 48721),
-			('Robinetta', 'Jeanesson', 71073733, '2020-06-13', '1967-08-06', 42330),
-			('Elsie', 'Godleman', 65532267, '2021-03-26', '1960-11-30', 50208),
-			('Lorri', 'Baradel', 57374192, '2019-12-09', '1984-08-09', 54504),
-			('Carlie', 'Tibbles', 47653241, '2019-05-13', '1958-04-20', 65200);
+			('Margarete', 'Scane', 26435882, 'mscane0@stumbleupon.com', '84Lo5K3PVA', '1632 Vermont Circle', '2016-10-15', '1979-04-09', 52800),
+			('Byran', 'Eglaise', 91071878, 'beglaise1@booking.com', 'oJOrMKgJp0l', '96329 Straubel Drive', '2020-12-10', '1973-11-18', 62044),
+			('Wenona', 'Exton', 43424215, 'wexton2@geocities.com', 'Ow7Pimxf', '106 Lyons Avenue', '2017-11-20', '1994-01-24', 49725),
+			('Roz', 'Cordero', 77149736, 'rcordero3@google.co.jp', 'ToZUL7', '803 Onsgard Park', '2020-01-11', '1980-04-14', 55890),
+			('Gussi', 'Olligan', 34037064, 'golligan4@facebook.com', 'PkcwXZxQNSQ0', '00236 Bultman Point', '2016-01-07', '1986-05-07', 57227),
+			('Sascha', 'Tungate', 51143307, 'stungate5@ca.gov', 'QePTN7f', '30 Logan Drive', '2021-01-21', '1990-02-10', 55004),
+			('Luci', 'Senussi', 27494001, 'lsenussi6@example.com', 'l4RPz8ST', '2139 Pond Alley', '2019-02-09', '1968-12-05', 56333),
+			('Waverley', 'De Zuani', 53825190, 'wdezuani7@123-reg.co.uk', 'G2wSbS0LsvO', '46695 Sullivan Circle', '2020-08-21', '1986-08-10', 45806),
+			('Nikos', 'Toor', 78649782, 'ntoor8@blogtalkradio.com', 'i6Z1OBFG', '801 Butternut Way', '2016-06-30', '1975-12-06', 41243),
+			('Fawnia', 'Narraway', 27551155, 'fnarraway9@chicagotribune.com', 'Ggxf4IEo', '43 Elka Street', '2020-09-30', '1971-04-04', 48678),
+			('Bryna', 'Disley', 76048699, 'bdisleya@furl.net', 'qK5xV9b7n', '880 Warbler Pass', '2018-01-22', '1987-04-11', 50194),
+			('Therese', 'Kippling', 38979728, 'tkipplingb@4shared.com', 'Fs3z1yz', '8113 Myrtle Hill', '2018-07-24', '1981-06-12', 49170),
+			('Agna', 'Davioud', 85183057, 'adavioudc@cisco.com', 'Wr2bNxXohw', '8372 Jenna Parkway', '2020-04-09', '1994-11-10', 62845),
+			('Alika', 'Dwire', 63595762, 'adwired@i2i.jp', 'VRLcasX7t0c', '619 Gina Point', '2020-07-22', '1971-12-07', 53843),
+			('Camel', 'Starking', 98000415, 'cstarkinge@google.nl', 'LL7FxwKU4', '87 Graceland Lane', '2019-10-13', '1981-11-25', 45748),
+			('Rodrick', 'Ganiclef', 26044835, 'rganicleff@acquirethisname.com', 'RSBmXAw4T', '899 American Pass', '2017-05-10', '1988-12-19', 58918),
+			('Lonna', 'Brugman', 38998274, 'lbrugmang@google.pl', '7ozSxfe', '650 Darwin Circle', '2020-08-24', '1985-04-30', 54161),
+			('Agnese', 'Seekings', 91088776, 'aseekingsh@skyrock.com', 'otGkhTYu2Zo', '16 Morrow Junction', '2017-07-06', '1990-07-11', 40557),
+			('Hildegarde', 'Hathorn', 46955065, 'hhathorni@smugmug.com', 'KntD5vGsz', '851 Haas Hill', '2021-06-02', '1992-09-09', 44370),
+			('Blithe', 'Weare', 71616692, 'bwearej@over-blog.com', 'bdDuUEqBJO', '61 Vera Alley', '2018-04-25', '1987-11-19', 51023),
+			('Rochell', 'Templeman', 55211526, 'rtemplemank@simplemachines.org', 'HxOibsB4Rq', '3 Nelson Drive', '2020-04-03', '1981-07-28', 42695),
+			('Patrizio', 'Schellig', 91692766, 'pschelligl@sciencedirect.com', 'bj7QOj', '20601 Hanover Avenue', '2017-10-29', '1975-08-23', 42115),
+			('Inness', 'Caban', 90746194, 'icabanm@jimdo.com', 'k04EuJGiRrP', '92573 Carberry Avenue', '2019-10-16', '1970-07-04', 41344),
+			('Hope', 'Duffil', 49836359, 'hduffiln@tripod.com', 'KOm8SfA8c', '96 Quincy Court', '2016-07-12', '1995-07-26', 44566),
+			('Elbertina', 'Allcorn', 98798187, 'eallcorno@mysql.com', 'fafRDQPwfj', '4 1st Court', '2016-05-13', '1989-02-22', 53280),
+			('Aridatha', 'Ratcliffe', 98749959, 'aratcliffep@naver.com', 'vdIQq30HpvK', '2575 Stang Pass', '2016-12-27', '1974-10-07', 54843),
+			('Justus', 'Picford', 57277562, 'jpicfordq@mac.com', 'KeeH69Sy', '69 Hoard Pass', '2017-02-13', '1969-11-29', 42298),
+			('Celestyn', 'Tourner', 80682206, 'ctournerr@ifeng.com', 'JNq1pV0', '5421 Chive Alley', '2020-06-11', '1978-12-16', 57180),
+			('Sheila', 'Edge', 26710378, 'sedges@taobao.com', 'Uj1SNE', '08 Tony Trail', '2017-04-27', '1991-12-17', 40357),
+			('Ashlin', 'Orchart', 49435080, 'aorchartt@adobe.com', 'KRgY8V', '551 Carioca Center', '2019-01-08', '1975-05-11', 45257);
 
--- DATA PEDIDO 1-30
+
+-- 14 DATA PEDIDO 1-30
 	INSERT INTO pedido
 			(idCliente,
 			idVendedor,
@@ -411,7 +385,37 @@
 			(5, 19, '2018-11-02 15:53:54'),
 			(20, 23, '2018-07-16 07:57:53');
 
--- DATA DEVOLUCION 1-10
+
+-- 15 DATA FACTURA 1-20
+	INSERT INTO factura
+			(idMedioDePago,
+			idPedido,
+			fechaHoraFacturacion,
+			descripcion)
+			VAlUES
+			(4, 7, '2021-11-27 13:35:12', 'Morbi vel lectus in quam fringilla rhoncus'),
+			(4, 10, '2021-06-18 00:31:14', 'Praesent id massa id nisl venenatis.'),
+			(2, 3, '2021-11-08 01:39:48', 'Fusce posuere felis sed lacus.'),
+			(5, 2, '2021-06-28 18:46:22', 'Aliquam erat volutpat.'),
+			(2, 8, '2021-02-23 23:13:28', 'Cras mi pede, malesuada in, imperdiet et'),
+			(1, 8, '2021-08-15 03:21:16', 'Donec posuere metus vitae ipsum. Aliquam'),
+			(7, 6, '2021-11-24 13:02:34', 'In tempor, turpis nec euismod scelerisque'),
+			(5, 4, '2021-11-01 07:49:10', 'Mauris lacinia sapien quis libero'),
+			(1, 7, '2021-10-01 19:21:29', 'Maecenas pulvinar lobortis est.'),
+			(6, 8, '2021-07-30 16:59:16', 'Integer tincidunt ante vel ipsum.'),
+			(4, 9, '2021-04-11 08:05:08', 'Phasellus id sapien in sapien iaculis'),
+			(3, 2, '2021-11-14 06:15:22', 'Ut tellus. Nulla ut erat id mauris'),
+			(3, 4, '2021-04-14 11:11:20', 'Morbi vestibulum, velit id pretium'),
+			(7, 5, '2021-07-20 15:38:09', 'Vestibulum ac est lacinia nisi venenatis'),
+			(5, 4, '2021-01-29 17:49:17', 'Suspendisse potenti. Nullam porttitor lacus.'),
+			(1, 5, '2021-04-10 19:24:00', 'Praesent lectus. Vestibulum quam sapien, varius'),
+			(4, 6, '2021-01-29 16:11:42', 'Morbi vestibulum, velit id pretium iaculis.'),
+			(6, 1, '2021-03-08 03:31:33', 'In eleifend quam a odio. In hac habitasse.'),
+			(2, 6, '2021-08-04 09:21:13', 'Vestibulum rutrum rutrum neque.'),
+			(2, 10, '2021-08-25 07:32:53', 'Nullam porttitor lacus at turpis.');
+
+
+-- 16 DATA DEVOLUCION 1-10
 	INSERT INTO devolucion
 			(idProducto,
 			idFactura,
@@ -420,17 +424,17 @@
 			fechaHoraDevolucion)
 			VALUES
 			(66, 16, 6, 294, '2021-05-28 00:57:21'),
-			(49, 26, 1, 536, '2021-05-16 12:09:46'),
-			(42, 24, 10, 539, '2021-03-26 23:15:37'),
+			(49, 20, 1, 536, '2021-05-16 12:09:46'),
+			(42, 2, 10, 539, '2021-03-26 23:15:37'),
 			(55, 7, 4, 216, '2021-05-31 06:41:23'),
-			(86, 27, 2, 861, '2021-11-23 18:58:20'),
-			(99, 22, 5, 204, '2021-07-02 13:40:58'),
+			(86, 4, 2, 861, '2021-11-23 18:58:20'),
+			(99, 2, 5, 204, '2021-07-02 13:40:58'),
 			(6, 15, 5, 815, '2021-09-06 09:51:41'),
 			(81, 10, 10, 941, '2021-10-26 09:09:00'),
 			(4, 16, 7, 604, '2021-08-20 04:35:31'),
 			(85, 19, 3, 987, '2021-05-19 18:59:04');
 
--- DATA DE ENVIO 1-30
+-- 17 DATA DE ENVIO 1-30
 	INSERT INTO envio
 			(idFactura,
 			idEmpresa,
@@ -471,6 +475,40 @@
 			(16, 1, 6, '2021-03-18 14:28:54', '74-486-9904', '730 Merrick Center');
 
 
+-- 18 DATA PRODUCTO PEDIDO
+	INSERT INTO productoPedido
+			(idPedido,idProducto,precio,fechaHora)
+			VAlUES
+			(15, 29, 636, '2021-05-16 01:45:08'),
+			(19, 69, 839, '2021-02-02 01:40:52'),
+			(3, 61, 467, '2021-07-29 06:32:42'),
+			(22, 52, 269, '2021-04-14 02:00:11'),
+			(26, 89, 249, '2021-02-20 01:45:02'),
+			(21, 15, 275, '2020-12-01 19:44:23'),
+			(4, 41, 621, '2021-09-06 00:46:56'),
+			(17, 89, 284, '2021-02-21 10:46:15'),
+			(1, 40, 999, '2021-09-20 22:10:31'),
+			(25, 18, 559, '2021-02-24 15:41:41'),
+			(27, 2, 755, '2020-12-02 00:45:16'),
+			(5, 13, 554, '2021-09-21 15:19:43'),
+			(17, 98, 876, '2021-02-25 19:58:39'),
+			(6, 70, 821, '2021-05-03 05:46:17'),
+			(13, 74, 654, '2021-06-26 02:02:24'),
+			(9, 6, 893, '2021-06-09 03:57:34'),
+			(14, 37, 866, '2021-03-08 12:50:03'),
+			(3, 65, 257, '2021-02-18 10:13:31'),
+			(10, 21, 704, '2021-07-20 21:12:47'),
+			(15, 1, 864, '2021-08-26 21:29:56'),
+			(8, 36, 589, '2021-07-09 10:01:04'),
+			(19, 69, 656, '2021-06-12 01:24:12'),
+			(17, 78, 817, '2021-11-07 23:42:04'),
+			(2, 62, 408, '2021-01-17 04:38:19'),
+			(27, 14, 506, '2021-10-22 12:39:40'),
+			(27, 88, 950, '2021-09-22 00:32:37'),
+			(28, 73, 537, '2020-12-03 11:05:19'),
+			(27, 56, 987, '2021-09-07 12:46:31'),
+			(13, 82, 818, '2021-09-22 06:39:30'),
+			(15, 21, 537, '2021-08-04 00:52:38');
 
 
 
