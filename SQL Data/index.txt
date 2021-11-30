@@ -1,2 +1,4 @@
-1) Creacion de Base de datos con las tablas y conexiones de FK's
-2) Data random para funcionar, data creada por medio de https://www.mockaroo.com/
+En este sector tenemos los siguientes pasos:
+  1) DB_LOCAL_LAGOT.sql El cual crea la base de datos, las tablas y hace las conexiones entre las claves foráneas.
+  2) IGRESO_DATA.sql Este archivo nos permite llenar con datos ficticios la base de datos para correr pruebas.
+  3) adminUSERS Este archivo nos permite generar usuarios de administacion, también random, con el propósito de seguir pruebas.
