@@ -1,5 +1,5 @@
 
-![lagot](https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg)<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="50" height="50">
+<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="400" height="400">
 
 # TP_IntegradorBaseDeDatos
 Integrador de Base de Datos IFTS18
