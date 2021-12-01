@@ -1,7 +1,7 @@
 # TP_IntegradorBaseDeDatos
 Integrador de Base de Datos IFTS18
 
-<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="500" height="400">
+<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="450" height="400">
 
 Instrucciones
    Comenzar a trabajar con los puntos solicitados en el PDF adjunto.
