@@ -1,16 +1,8 @@
-
-<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="400" height="400">
-
 # TP_IntegradorBaseDeDatos
 Integrador de Base de Datos IFTS18
 
-Integrantes :
-  * Oriana Rosas
-  * Yamila Villarnovo
-  * Javier García 
-  * Alberto {Inserte Apellido}
-  * Anderson Ocaña
- 
+<img src="https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg" width="400" height="400">
+
 Instrucciones
    Comenzar a trabajar con los puntos solicitados en el PDF adjunto.
    Mostrar avance semanal.
@@ -20,3 +12,12 @@ Instrucciones
    Realicen reuniones periódicas. (Recomendado grabarlas)
    Usar metodología SCRUMM
    Se adjunta captura con un TRELLO de ejemplo.
+
+Integrantes :
+  * Oriana Rosas
+  * Yamila Villarnovo
+  * Javier García 
+  * Alberto {Inserte Apellido}
+  * Anderson Ocaña
+ 
+
