@@ -1,5 +1,5 @@
 
-![lagot](https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg=400x400)
+![lagot](https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg){:height="50%" width="50%"}
 
 # TP_IntegradorBaseDeDatos
 Integrador de Base de Datos IFTS18
