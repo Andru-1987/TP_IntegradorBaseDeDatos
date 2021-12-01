@@ -1,3 +1,6 @@
+
+![lagot](https://user-images.githubusercontent.com/86977326/144317487-aadd2612-7c22-4c4d-bdec-b80f74a54868.jpeg)
+
 # TP_IntegradorBaseDeDatos
 Integrador de Base de Datos IFTS18
 
