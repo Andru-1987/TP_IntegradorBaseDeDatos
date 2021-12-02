@@ -22,7 +22,7 @@
 				('Invierno'),
 				('Primavera');
 
--- 3 DATA TARGET 1-8
+-- 3 DATA TARGET 1-6
 	INSERT INTO target
 				(target)
 				VALUES 
@@ -63,7 +63,37 @@
 	('1503502724', '2001-11-12 19:18:51', 'Dew Scandred', '9942668424', '9227 Vermont Street', 'dscandredi@hostgator.com'),
 	('4602275338', '2017-01-26 05:24:20', 'Ninnetta Reape', '2509209536', '95 Victoria Drive', 'nreapej@wikia.com');
 
--- 5 DATA PRODUCTO 1-100
+
+-- 5 DATA MARCA 1-10
+	INSERT INTO marca
+		(marca)
+		VALUES
+		('Schaden-Ohara'),
+		('Rath and Sons'),
+		('Rippin-D'),
+		('Yundt, Cronin and Abshire'),
+		('Mertz, Brakus and Hegmann'),
+		('Mante LLC'),
+		('Thiel and Sons'),
+		('Trantow'),
+		('Reilly and Graham'),
+		('Nader');
+
+-- 6 DATA TAllE 1-9
+	INSERT INTO talle
+		(talle)
+		VALUES
+		('XS'),
+		('S'),
+		('M'),
+		('L'),
+		('XL'),
+		('2XL'),
+		('3XL'),
+		('4XL'),
+		('5XL');
+
+-- 7 DATA PRODUCTO 1-100
 
 	INSERT INTO producto 
 			(idProveedor,
@@ -72,116 +102,117 @@
 			idTarget,
 			precioCompra,
 			precioDeVenta,
-			marca,
-			talle,
+			idMarca, 
+			idTalle, 
 			cantidad,
 			foto ,
 			garantia ,
 			plazoDeGarantia ,
 			devolucion )
 	VALUES
-	(16, 4, 1, 1, 175.36, 245.504, 'Pouros-Hilll', 'XL', 263, 'https://robohash.org/quifugiatquis.png?size=50x50&set=set1', false, '2022-10-12', true),
-	(9, 9, 4, 5, 1441.05, 2017.47, 'Wisozk, Watsica and Emmerich', 'M', 101, 'https://robohash.org/officiisetassumenda.png?size=50x50&set=set1', true, '2022-09-02', false),
-	(7, 1, 2, 2, 953.84, 1335.376, 'Macejkovic-Schneider', 'XS', 179, 'https://robohash.org/autcumest.png?size=50x50&set=set1', false, '2022-05-01', false),
-	(1, 2, 4, 5, 1909.44, 2673.216, 'Medhurst LLC', 'S', 10, 'https://robohash.org/rerumplaceaterror.png?size=50x50&set=set1', true, '2022-09-21', true),
-	(3, 6, 3, 6, 1130.23, 1582.322, 'D''Amore-Wunsch', 'XS', 100, 'https://robohash.org/suntremest.png?size=50x50&set=set1', true, '2022-06-29', true),
-	(11, 4, 3, 3, 1115.43, 1561.602, 'Harris-Harber', 'S', 121, 'https://robohash.org/veritatisquoquasi.png?size=50x50&set=set1', true, '2022-07-10', true),
-	(8, 6, 2, 4, 939.9, 1315.86, 'Kutch and Sons', 'XL', 143, 'https://robohash.org/animivoluptatemautem.png?size=50x50&set=set1', true, '2022-07-30', false),
-	(16, 5, 4, 2, 1131.42, 1583.988, 'Purdy and Sons', '3XL', 276, 'https://robohash.org/suscipitdelenitiinventore.png?size=50x50&set=set1', false, '2021-10-25', true),
-	(2, 6, 3, 2, 581.7, 814.38, 'Senger-Corkery', 'S', 59, 'https://robohash.org/solutaquaeadipisci.png?size=50x50&set=set1', false, '2022-08-24', true),
-	(10, 9, 4, 2, 765.11, 1071.154, 'Dietrich LLC', 'M', 76, 'https://robohash.org/aperiameligendinihil.png?size=50x50&set=set1', true, '2021-11-10', true),
-	(18, 2, 1, 3, 1915.15, 2681.21, 'Towne-Murphy', 'M', 263, 'https://robohash.org/ipsavoluptatedolor.png?size=50x50&set=set1', false, '2022-09-30', true),
-	(12, 5, 4, 5, 691.36, 967.904, 'Yundt-West', 'L', 292, 'https://robohash.org/omniscupiditatealiquam.png?size=50x50&set=set1', true, '2021-09-26', true),
-	(16, 2, 3, 3, 1988.96, 2784.544, 'Trantow-Yost', '3XL', 280, 'https://robohash.org/quisnameius.png?size=50x50&set=set1', false, '2022-04-05', true),
-	(11, 6, 2, 2, 802.88, 1124.032, 'Gibson, Kutch and Lang', 'XL', 148, 'https://robohash.org/nullaadistinctio.png?size=50x50&set=set1', false, '2022-05-29', true),
-	(16, 9, 1, 3, 1651.45, 2312.03, 'Zboncak, Lindgren and Strosin', 'XS', 144, 'https://robohash.org/delenitiquissint.png?size=50x50&set=set1', false, '2022-08-21', false),
-	(1, 3, 3, 3, 1384.81, 1938.734, 'Hegmann and Sons', 'M', 253, 'https://robohash.org/eumaliquamofficiis.png?size=50x50&set=set1', false, '2021-12-03', false),
-	(6, 7, 2, 5, 1360.87, 1905.218, 'Kunze and Sons', 'XS', 271, 'https://robohash.org/eosataut.png?size=50x50&set=set1', false, '2022-11-11', false),
-	(10, 5, 1, 2, 543.5, 760.9, 'Greenholt, Bernier and Armstrong', 'L', 183, 'https://robohash.org/itaqueetexplicabo.png?size=50x50&set=set1', false, '2022-10-31', false),
-	(9, 5, 1, 1, 978.86, 1370.404, 'Nienow-Marks', 'M', 117, 'https://robohash.org/namaliquidaut.png?size=50x50&set=set1', true, '2022-08-29', false),
-	(10, 6, 1, 2, 171.28, 239.792, 'Strosin, Steuber and Schuster', 'XL', 252, 'https://robohash.org/laboredoloresimpedit.png?size=50x50&set=set1', true, '2021-11-02', true),
-	(2, 5, 1, 4, 1416.91, 1983.674, 'Pfeffer Group', 'XS', 132, 'https://robohash.org/occaecatiteneturplaceat.png?size=50x50&set=set1', true, '2022-01-23', true),
-	(14, 1, 3, 3, 1852.99, 2594.186, 'Grimes and Sons', 'M', 224, 'https://robohash.org/voluptatumeosarchitecto.png?size=50x50&set=set1', false, '2022-10-18', true),
-	(12, 5, 3, 2, 863.97, 1209.558, 'Robel LLC', '3XL', 234, 'https://robohash.org/nisidoloresa.png?size=50x50&set=set1', true, '2021-07-08', true),
-	(16, 9, 2, 1, 1760.8, 2465.12, 'Halvorson and Sons', 'XL', 250, 'https://robohash.org/solutaetsunt.png?size=50x50&set=set1', false, '2022-08-04', true),
-	(18, 6, 3, 4, 185.82, 260.148, 'Morissette, Champlin and Lubowitz', 'XL', 261, 'https://robohash.org/voluptatemrepudiandaeautem.png?size=50x50&set=set1', false, '2022-05-05', false),
-	(20, 1, 3, 6, 515.96, 722.344, 'Haag, Purdy and Parisian', 'XL', 166, 'https://robohash.org/suscipittotameos.png?size=50x50&set=set1', true, '2022-11-12', true),
-	(7, 4, 4, 6, 391.68, 548.352, 'Stanton LLC', 'S', 295, 'https://robohash.org/maximenequedolorem.png?size=50x50&set=set1', false, '2022-03-04', true),
-	(20, 4, 4, 1, 1785.21, 2499.294, 'Kuvalis, Abernathy and Grady', 'M', 257, 'https://robohash.org/quiearumaperiam.png?size=50x50&set=set1', false, '2022-07-17', true),
-	(1, 3, 2, 1, 873.95, 1223.53, 'Mayer, Price and Reichert', 'S', 251, 'https://robohash.org/innesciunteos.png?size=50x50&set=set1', false, '2021-12-10', true),
-	(16, 9, 3, 1, 298.66, 418.124, 'Feeney, Robel and Goyette', 'L', 167, 'https://robohash.org/nostrumhicut.png?size=50x50&set=set1', false, '2022-05-14', false),
-	(19, 6, 4, 1, 1865.83, 2612.162, 'Labadie, O''Kon and Sanford', 'S', 35, 'https://robohash.org/solutaidvoluptas.png?size=50x50&set=set1', true, '2022-04-17', true),
-	(20, 4, 1, 4, 617.32, 864.248, 'Hamill-Beier', 'M', 174, 'https://robohash.org/optiolaudantiumquis.png?size=50x50&set=set1', false, '2021-11-26', true),
-	(10, 9, 3, 2, 813.7, 1139.18, 'Spencer, Nader and Emmerich', '3XL', 219, 'https://robohash.org/magnivoluptasminima.png?size=50x50&set=set1', false, '2022-02-23', true),
-	(16, 1, 4, 3, 1500.87, 2101.218, 'Koch-Rice', '2XL', 181, 'https://robohash.org/suntcommodiblanditiis.png?size=50x50&set=set1', false, '2021-10-11', true),
-	(15, 4, 1, 4, 1794.63, 2512.482, 'Kihn LLC', '3XL', 68, 'https://robohash.org/quialiberorepellendus.png?size=50x50&set=set1', true, '2021-08-27', false),
-	(1, 1, 2, 6, 1843.66, 2581.124, 'Howell-Green', '3XL', 89, 'https://robohash.org/doloreconsequaturbeatae.png?size=50x50&set=set1', true, '2022-02-17', false),
-	(1, 8, 4, 2, 1594.98, 2232.972, 'Daugherty Group', '2XL', 44, 'https://robohash.org/recusandaequiaalias.png?size=50x50&set=set1', true, '2022-01-09', true),
-	(2, 8, 4, 1, 1529.66, 2141.524, 'Stanton LLC', 'S', 67, 'https://robohash.org/nemomodiquis.png?size=50x50&set=set1', false, '2022-08-21', false),
-	(3, 9, 4, 6, 1446.01, 2024.414, 'Ernser-Stroman', '2XL', 225, 'https://robohash.org/asperioresveniamquo.png?size=50x50&set=set1', true, '2021-08-15', false),
-	(1, 6, 1, 4, 407.73, 570.822, 'Cruickshank-Feeney', 'XS', 229, 'https://robohash.org/doloripsanostrum.png?size=50x50&set=set1', false, '2022-03-01', true),
-	(3, 2, 2, 4, 1650.71, 2310.994, 'Kutch and Sons', '2XL', 277, 'https://robohash.org/eligendiillumconsequatur.png?size=50x50&set=set1', true, '2022-09-17', false),
-	(17, 4, 1, 4, 1734.92, 2428.888, 'Cremin, Baumbach and Reichel', '2XL', 68, 'https://robohash.org/quiscumeligendi.png?size=50x50&set=set1', false, '2021-12-05', false),
-	(17, 5, 1, 6, 1793.68, 2511.152, 'Buckridge-Kemmer', '2XL', 68, 'https://robohash.org/oditatqueest.png?size=50x50&set=set1', true, '2022-03-18', false),
-	(8, 8, 3, 5, 845.9, 1184.26, 'Breitenberg LLC', 'XL', 183, 'https://robohash.org/assumendacumquequi.png?size=50x50&set=set1', true, '2021-08-23', false),
-	(4, 5, 1, 1, 844.84, 1182.776, 'Romaguera Group', 'M', 89, 'https://robohash.org/doloromnisdoloribus.png?size=50x50&set=set1', true, '2021-10-01', true),
-	(20, 9, 4, 4, 1683.12, 2356.368, 'Marquardt, D''Amore and Jones', 'S', 182, 'https://robohash.org/inautemrerum.png?size=50x50&set=set1', false, '2021-08-12', false),
-	(10, 9, 4, 5, 1531.09, 2143.526, 'Mertz, Hettinger and Connelly', 'M', 240, 'https://robohash.org/quibusdamquamnihil.png?size=50x50&set=set1', true, '2021-11-25', false),
-	(7, 6, 1, 5, 1756.18, 2458.652, 'Steuber, Wuckert and Kovacek', '2XL', 93, 'https://robohash.org/inoccaecatisint.png?size=50x50&set=set1', false, '2021-09-16', true),
-	(12, 5, 1, 3, 490.07, 686.098, 'Dickinson and Sons', 'S', 72, 'https://robohash.org/utdoloribushic.png?size=50x50&set=set1', false, '2021-12-14', false),
-	(3, 2, 3, 5, 1137.75, 1592.85, 'Tremblay, Crist and Bahringer', 'XL', 53, 'https://robohash.org/rerumabconsequatur.png?size=50x50&set=set1', false, '2021-08-17', false),
-	(9, 8, 3, 4, 1824.89, 2554.846, 'Farrell, Crist and Kuhic', 'M', 172, 'https://robohash.org/nisieteum.png?size=50x50&set=set1', true, '2021-10-28', false),
-	(5, 4, 4, 3, 635.54, 889.756, 'Nitzsche-Langosh', 'L', 283, 'https://robohash.org/quaelaboriosamest.png?size=50x50&set=set1', true, '2021-09-14', false),
-	(15, 2, 1, 6, 401.35, 561.89, 'Cole-Harber', '2XL', 15, 'https://robohash.org/velnonhic.png?size=50x50&set=set1', false, '2022-02-01', false),
-	(17, 9, 2, 5, 1848.0, 2587.2, 'Hoeger-Robel', '3XL', 147, 'https://robohash.org/undenonrerum.png?size=50x50&set=set1', false, '2022-11-05', false),
-	(11, 8, 1, 3, 635.61, 889.854, 'Carter Inc', 'M', 155, 'https://robohash.org/remillumin.png?size=50x50&set=set1', false, '2021-07-08', false),
-	(16, 1, 2, 2, 1089.31, 1525.034, 'Stamm-Beer', 'XL', 48, 'https://robohash.org/etrationeomnis.png?size=50x50&set=set1', true, '2022-06-30', false),
-	(8, 3, 2, 3, 1039.05, 1454.67, 'Smitham-Stroman', 'M', 34, 'https://robohash.org/occaecatiadconsequuntur.png?size=50x50&set=set1', false, '2022-04-27', false),
-	(14, 5, 2, 2, 988.66, 1384.124, 'Wiegand, Mohr and Wisoky', 'M', 223, 'https://robohash.org/errorquaeratlaboriosam.png?size=50x50&set=set1', true, '2021-12-05', true),
-	(4, 6, 1, 4, 1993.68, 2791.152, 'Wilkinson Inc', 'XS', 16, 'https://robohash.org/cumqueetet.png?size=50x50&set=set1', true, '2021-12-08', true),
-	(20, 7, 4, 5, 739.58, 1035.412, 'Kuhic Inc', '3XL', 256, 'https://robohash.org/porroomnispraesentium.png?size=50x50&set=set1', false, '2021-12-29', true),
-	(5, 8, 3, 5, 1808.9, 2532.46, 'Lemke Group', '3XL', 167, 'https://robohash.org/cumculpaeaque.png?size=50x50&set=set1', true, '2021-11-30', true),
-	(17, 4, 3, 5, 763.46, 1068.844, 'Kub-Feeney', '2XL', 82, 'https://robohash.org/quidemtemporeest.png?size=50x50&set=set1', false, '2022-01-19', true),
-	(20, 6, 4, 5, 595.89, 834.246, 'Romaguera LLC', 'XL', 256, 'https://robohash.org/enimutvoluptas.png?size=50x50&set=set1', false, '2022-09-10', false),
-	(20, 8, 2, 1, 756.13, 1058.582, 'Crooks-Bauch', 'XS', 146, 'https://robohash.org/saepesuntcommodi.png?size=50x50&set=set1', true, '2022-05-21', true),
-	(4, 1, 4, 6, 1523.15, 2132.41, 'Parker and Sons', 'L', 282, 'https://robohash.org/molestiasquisquamquasi.png?size=50x50&set=set1', false, '2021-09-11', true),
-	(2, 7, 4, 2, 708.96, 992.544, 'Gislason-Donnelly', '2XL', 183, 'https://robohash.org/ipsamautemexercitationem.png?size=50x50&set=set1', true, '2022-02-19', false),
-	(15, 7, 3, 1, 689.51, 965.314, 'Homenick-Harvey', 'M', 135, 'https://robohash.org/quiquiamollitia.png?size=50x50&set=set1', false, '2022-05-29', false),
-	(6, 2, 4, 5, 715.32, 1001.448, 'Anderson, Treutel and Grimes', 'XL', 176, 'https://robohash.org/ipsafugavoluptates.png?size=50x50&set=set1', true, '2022-05-09', false),
-	(15, 2, 3, 4, 1776.55, 2487.17, 'Lockman-Abernathy', 'S', 15, 'https://robohash.org/voluptatumsequimolestiae.png?size=50x50&set=set1', true, '2022-05-30', true),
-	(15, 2, 2, 3, 930.6, 1302.84, 'Schmitt-Schroeder', 'M', 79, 'https://robohash.org/quosquiavoluptas.png?size=50x50&set=set1', true, '2022-06-17', false),
-	(16, 5, 4, 1, 1322.35, 1851.29, 'Morissette Inc', 'S', 200, 'https://robohash.org/porroetqui.png?size=50x50&set=set1', false, '2021-11-23', true),
-	(2, 4, 3, 5, 1795.88, 2514.232, 'Rath LLC', '2XL', 220, 'https://robohash.org/repudiandaeeaexercitationem.png?size=50x50&set=set1', false, '2021-09-26', true),
-	(17, 8, 4, 5, 1722.37, 2411.318, 'Larkin-Ledner', 'XS', 102, 'https://robohash.org/aliquidnonin.png?size=50x50&set=set1', true, '2022-08-23', true),
-	(1, 6, 1, 3, 383.18, 536.452, 'Sawayn, Leffler and Prosacco', 'S', 81, 'https://robohash.org/ipsumcumqueunde.png?size=50x50&set=set1', false, '2021-07-17', true),
-	(14, 4, 3, 5, 1555.1, 2177.14, 'Goodwin and Sons', 'XS', 65, 'https://robohash.org/voluptatumomnisdeleniti.png?size=50x50&set=set1', false, '2022-04-13', true),
-	(16, 6, 4, 2, 1839.49, 2575.286, 'Luettgen, Homenick and Bogisich', 'XS', 196, 'https://robohash.org/eaquepraesentiumvoluptatem.png?size=50x50&set=set1', true, '2022-07-29', false),
-	(17, 4, 1, 3, 799.72, 1119.608, 'Thiel-Schmitt', 'XL', 233, 'https://robohash.org/doloremsuntquibusdam.png?size=50x50&set=set1', false, '2021-07-09', false),
-	(8, 1, 1, 2, 1767.64, 2474.696, 'Haag-Koelpin', 'S', 189, 'https://robohash.org/doloresquibusdamnam.png?size=50x50&set=set1', false, '2022-05-17', false),
-	(3, 3, 1, 1, 1151.22, 1611.708, 'Friesen-Rowe', 'XS', 265, 'https://robohash.org/nequenonquo.png?size=50x50&set=set1', true, '2022-01-04', false),
-	(4, 5, 4, 4, 116.14, 162.596, 'Bayer and Sons', 'M', 168, 'https://robohash.org/aliquidreprehenderitomnis.png?size=50x50&set=set1', true, '2022-01-03', false),
-	(5, 3, 2, 1, 538.44, 753.816, 'Lynch-Spinka', '3XL', 299, 'https://robohash.org/enimveroet.png?size=50x50&set=set1', true, '2022-06-01', true),
-	(5, 1, 1, 5, 1615.84, 2262.176, 'Harris-Miller', 'L', 19, 'https://robohash.org/officiaillofugiat.png?size=50x50&set=set1', true, '2021-09-27', true),
-	(12, 9, 1, 1, 1713.67, 2399.138, 'Barrows, Jacobi and Lebsack', 'XS', 148, 'https://robohash.org/quasidictaveniam.png?size=50x50&set=set1', false, '2021-12-12', true),
-	(16, 3, 3, 4, 1550.55, 2170.77, 'Sawayn, Bartell and Kshlerin', '3XL', 201, 'https://robohash.org/autemquilaudantium.png?size=50x50&set=set1', true, '2022-06-26', true),
-	(1, 3, 4, 6, 1325.76, 1856.064, 'Yost-Kiehn', 'XL', 109, 'https://robohash.org/rerumdelectusdolor.png?size=50x50&set=set1', false, '2022-11-05', false),
-	(15, 1, 3, 1, 880.37, 1232.518, 'Davis and Sons', '3XL', 297, 'https://robohash.org/laboriosameumveritatis.png?size=50x50&set=set1', true, '2021-10-19', false),
-	(3, 6, 1, 4, 1904.85, 2666.79, 'Abshire and Sons', 'M', 277, 'https://robohash.org/saepeillumnon.png?size=50x50&set=set1', true, '2021-07-04', false),
-	(18, 4, 4, 1, 562.2, 787.08, 'Johnson LLC', 'M', 179, 'https://robohash.org/ettotamnumquam.png?size=50x50&set=set1', false, '2022-03-16', true),
-	(17, 3, 3, 3, 1533.32, 2146.648, 'Hodkiewicz, Rogahn and Powlowski', '3XL', 205, 'https://robohash.org/liberorepudiandaesequi.png?size=50x50&set=set1', false, '2022-06-08', true),
-	(6, 5, 3, 2, 151.33, 211.862, 'Howe-Grady', 'M', 145, 'https://robohash.org/facilissednemo.png?size=50x50&set=set1', true, '2022-11-12', false),
-	(3, 4, 2, 6, 210.34, 294.476, 'Kuhn-Mosciski', 'M', 162, 'https://robohash.org/totamaccusantiumid.png?size=50x50&set=set1', true, '2022-08-19', true),
-	(16, 4, 1, 3, 1949.15, 2728.81, 'Prosacco, Larson and Kshlerin', 'XS', 144, 'https://robohash.org/utdoloremquequam.png?size=50x50&set=set1', true, '2022-07-25', false),
-	(13, 2, 1, 2, 1264.06, 1769.684, 'Senger Inc', 'XL', 17, 'https://robohash.org/quifacilisa.png?size=50x50&set=set1', false, '2022-09-28', true),
-	(3, 1, 3, 6, 287.63, 402.682, 'Bailey Group', '2XL', 223, 'https://robohash.org/estaliquampossimus.png?size=50x50&set=set1', true, '2022-10-29', false),
-	(2, 8, 3, 6, 943.32, 1320.648, 'Glover, Dach and Pfeffer', 'L', 257, 'https://robohash.org/voluptatemetearum.png?size=50x50&set=set1', false, '2022-04-23', false),
-	(7, 9, 1, 6, 290.88, 407.232, 'Hudson, Schaefer and Tromp', '2XL', 270, 'https://robohash.org/dignissimosvoluptatemexercitationem.png?size=50x50&set=set1', true, '2021-12-28', false),
-	(12, 3, 2, 1, 1260.11, 1764.154, 'Koch-Price', 'L', 165, 'https://robohash.org/expeditaassumendaea.png?size=50x50&set=set1', true, '2022-10-31', true),
-	(19, 3, 1, 5, 102.44, 143.416, 'Hettinger-Ward', 'XS', 241, 'https://robohash.org/consequaturquout.png?size=50x50&set=set1', false, '2022-06-03', true),
-	(15, 4, 4, 3, 507.7, 710.78, 'Gutmann, Thiel and Fritsch', 'XL', 124, 'https://robohash.org/doloribusplaceataccusamus.png?size=50x50&set=set1', false, '2022-05-24', true),
-	(12, 2, 4, 2, 1187.03, 1661.842, 'Douglas, Cummerata and White', 'M', 270, 'https://robohash.org/voluptasnecessitatibuspariatur.png?size=50x50&set=set1', true, '2021-12-13', false);
+		(5, 8, 1, 6, 901.52, 1262.128, 10, 7, 70, 'https://robohash.org/sitconsequaturaut.jpg?size=50x50&set=set1', false, '2020-12-19', true),
+		(17, 4, 1, 6, 621.78, 870.492, 9, 5, 30, 'https://robohash.org/harumenimnihil.jpg?size=50x50&set=set1', true, '2021-01-09', true),
+		(10, 4, 3, 5, 513.77, 719.278, 5, 3, 100, 'https://robohash.org/cupiditateassumendarepudiandae.jpg?size=50x50&set=set1', true, '2022-03-15', true),
+		(4, 6, 1, 4, 881.7, 1234.38, 6, 4, 98, 'https://robohash.org/quiautet.jpg?size=50x50&set=set1', true, '2022-09-08', true),
+		(20, 1, 4, 1, 707.59, 990.626, 10, 8, 9, 'https://robohash.org/voluptatemmagnamdolor.jpg?size=50x50&set=set1', false, '2022-04-30', false),
+		(4, 8, 1, 3, 813.9, 1139.46, 3, 7, 87, 'https://robohash.org/voluptatemdolornihil.jpg?size=50x50&set=set1', false, '2022-07-20', false),
+		(18, 8, 3, 2, 349.69, 489.566, 10, 2, 68, 'https://robohash.org/suntautemillo.jpg?size=50x50&set=set1', true, '2021-05-21', false),
+		(16, 6, 2, 6, 351.0, 491.4, 5, 2, 25, 'https://robohash.org/atqueutquidem.jpg?size=50x50&set=set1', false, '2022-10-17', true),
+		(10, 3, 4, 2, 821.42, 1149.988, 5, 6, 1, 'https://robohash.org/sequiplaceatveniam.jpg?size=50x50&set=set1', false, '2021-07-16', true),
+		(12, 7, 3, 4, 556.85, 779.59, 1, 9, 82, 'https://robohash.org/rerumabvoluptatum.jpg?size=50x50&set=set1', false, '2020-12-30', false),
+		(8, 8, 1, 5, 901.8, 1262.52, 6, 1, 35, 'https://robohash.org/maximedoloreillum.jpg?size=50x50&set=set1', false, '2022-03-02', false),
+		(19, 6, 1, 4, 321.42, 449.988, 7, 5, 3, 'https://robohash.org/eumeumquas.jpg?size=50x50&set=set1', true, '2022-01-09', true),
+		(3, 7, 2, 4, 728.49, 1019.886, 9, 8, 61, 'https://robohash.org/corporisnonnumquam.jpg?size=50x50&set=set1', false, '2022-11-29', true),
+		(18, 8, 4, 1, 506.56, 709.184, 2, 9, 10, 'https://robohash.org/reiciendisvoluptassuscipit.jpg?size=50x50&set=set1', true, '2021-10-19', false),
+		(15, 7, 2, 2, 578.39, 809.746, 4, 5, 51, 'https://robohash.org/delenitiminimapariatur.jpg?size=50x50&set=set1', false, '2021-03-05', true),
+		(14, 6, 4, 3, 601.43, 842.002, 6, 4, 64, 'https://robohash.org/autemrepellenduseos.jpg?size=50x50&set=set1', true, '2022-06-20', false),
+		(13, 2, 2, 4, 801.97, 1122.758, 6, 1, 6, 'https://robohash.org/velitpossimusminima.jpg?size=50x50&set=set1', false, '2022-10-01', true),
+		(6, 3, 1, 6, 336.06, 470.484, 8, 7, 27, 'https://robohash.org/necessitatibussedquaerat.jpg?size=50x50&set=set1', false, '2022-03-10', false),
+		(12, 7, 4, 6, 720.89, 1009.246, 2, 8, 77, 'https://robohash.org/nostrumtotama.jpg?size=50x50&set=set1', true, '2022-11-26', true),
+		(18, 1, 3, 2, 866.82, 1213.548, 7, 5, 12, 'https://robohash.org/quiavoluptatemautem.jpg?size=50x50&set=set1', false, '2022-03-23', false),
+		(14, 8, 3, 5, 353.19, 494.466, 3, 8, 9, 'https://robohash.org/autteneturoptio.jpg?size=50x50&set=set1', true, '2021-09-02', true),
+		(18, 7, 2, 4, 417.96, 585.144, 6, 2, 88, 'https://robohash.org/errorenimsapiente.jpg?size=50x50&set=set1', true, '2021-04-17', false),
+		(5, 4, 1, 4, 438.02, 613.228, 3, 9, 35, 'https://robohash.org/fugiataliasaut.jpg?size=50x50&set=set1', true, '2022-08-27', true),
+		(19, 2, 1, 5, 875.78, 1226.092, 8, 3, 10, 'https://robohash.org/magnamsedfuga.jpg?size=50x50&set=set1', true, '2021-04-27', false),
+		(3, 5, 1, 2, 510.49, 714.686, 8, 2, 86, 'https://robohash.org/voluptatemquiaofficia.jpg?size=50x50&set=set1', true, '2021-03-17', false),
+		(11, 5, 4, 2, 530.81, 743.134, 7, 2, 40, 'https://robohash.org/reiciendisbeataeillum.jpg?size=50x50&set=set1', true, '2021-03-06', false),
+		(14, 7, 3, 1, 795.87, 1114.218, 3, 5, 32, 'https://robohash.org/autquaedolores.jpg?size=50x50&set=set1', true, '2021-10-11', false),
+		(11, 2, 4, 2, 598.41, 837.774, 2, 1, 62, 'https://robohash.org/quodnonquas.jpg?size=50x50&set=set1', false, '2022-06-09', false),
+		(1, 2, 3, 6, 402.79, 563.906, 9, 4, 57, 'https://robohash.org/suntsapienteet.jpg?size=50x50&set=set1', false, '2021-04-02', true),
+		(19, 1, 1, 1, 719.95, 1007.93, 4, 5, 47, 'https://robohash.org/sitnonquae.jpg?size=50x50&set=set1', false, '2022-03-28', true),
+		(8, 1, 3, 5, 353.2, 494.48, 2, 8, 14, 'https://robohash.org/repudiandaeestmodi.jpg?size=50x50&set=set1', true, '2022-04-26', true),
+		(8, 5, 4, 6, 339.66, 475.524, 4, 2, 92, 'https://robohash.org/aenimquaerat.jpg?size=50x50&set=set1', true, '2021-03-09', true),
+		(19, 5, 3, 5, 815.49, 1141.686, 5, 9, 63, 'https://robohash.org/reiciendisexcepturiaut.jpg?size=50x50&set=set1', true, '2020-12-01', true),
+		(7, 1, 2, 3, 987.26, 1382.164, 1, 6, 1, 'https://robohash.org/explicabodictasuscipit.jpg?size=50x50&set=set1', false, '2022-10-03', true),
+		(18, 4, 1, 5, 532.51, 745.514, 5, 7, 62, 'https://robohash.org/reprehenderitetquo.jpg?size=50x50&set=set1', false, '2021-08-07', false),
+		(14, 7, 2, 1, 549.48, 769.272, 8, 8, 87, 'https://robohash.org/voluptatemvoluptatibusmolestias.jpg?size=50x50&set=set1', false, '2021-04-06', false),
+		(3, 5, 1, 6, 711.37, 995.918, 7, 4, 74, 'https://robohash.org/teneturveroipsa.jpg?size=50x50&set=set1', false, '2021-03-25', false),
+		(17, 7, 3, 6, 613.46, 858.844, 9, 3, 40, 'https://robohash.org/consequunturconsequaturaut.jpg?size=50x50&set=set1', false, '2022-09-24', false),
+		(13, 6, 3, 4, 536.39, 750.946, 2, 2, 48, 'https://robohash.org/exvoluptaset.jpg?size=50x50&set=set1', false, '2021-01-21', true),
+		(7, 5, 3, 1, 994.25, 1391.95, 5, 7, 54, 'https://robohash.org/voluptasassumendaid.jpg?size=50x50&set=set1', false, '2021-04-25', true),
+		(10, 4, 4, 1, 913.04, 1278.256, 3, 7, 34, 'https://robohash.org/officiaperspiciatismaiores.jpg?size=50x50&set=set1', true, '2022-01-15', true),
+		(16, 5, 1, 5, 639.41, 895.174, 1, 5, 18, 'https://robohash.org/consecteturvoluptasminus.jpg?size=50x50&set=set1', true, '2022-01-30', false),
+		(6, 1, 2, 2, 681.64, 954.296, 3, 8, 30, 'https://robohash.org/voluptasametnecessitatibus.jpg?size=50x50&set=set1', false, '2021-08-15', true),
+		(9, 4, 2, 3, 940.6, 1316.84, 2, 4, 53, 'https://robohash.org/doloresearumvel.jpg?size=50x50&set=set1', false, '2022-08-03', true),
+		(19, 8, 1, 2, 937.28, 1312.192, 3, 2, 85, 'https://robohash.org/excepturisitiure.jpg?size=50x50&set=set1', true, '2021-08-08', true),
+		(7, 7, 4, 1, 511.84, 716.576, 9, 2, 79, 'https://robohash.org/minimaaccusamusnumquam.jpg?size=50x50&set=set1', false, '2021-12-05', false),
+		(18, 3, 3, 2, 929.14, 1300.796, 9, 6, 27, 'https://robohash.org/doloremdolorumporro.jpg?size=50x50&set=set1', true, '2021-01-15', false),
+		(6, 6, 1, 2, 706.89, 989.646, 7, 9, 51, 'https://robohash.org/quisquamnisiratione.jpg?size=50x50&set=set1', false, '2022-02-15', true),
+		(17, 1, 2, 2, 553.95, 775.53, 3, 2, 16, 'https://robohash.org/minimaseddolores.jpg?size=50x50&set=set1', true, '2021-04-18', true),
+		(14, 8, 4, 1, 770.25, 1078.35, 9, 5, 44, 'https://robohash.org/deseruntlaudantiumimpedit.jpg?size=50x50&set=set1', true, '2022-02-01', false),
+		(16, 9, 2, 2, 603.99, 845.586, 8, 2, 69, 'https://robohash.org/possimusperspiciatisquia.jpg?size=50x50&set=set1', true, '2022-01-15', true),
+		(14, 1, 4, 5, 447.07, 625.898, 8, 1, 100, 'https://robohash.org/beataeconsequaturveritatis.jpg?size=50x50&set=set1', false, '2021-11-01', false),
+		(16, 1, 4, 1, 508.4, 711.76, 9, 3, 1, 'https://robohash.org/enimtemporaiure.jpg?size=50x50&set=set1', false, '2021-12-29', false),
+		(18, 4, 2, 5, 572.95, 802.13, 8, 8, 82, 'https://robohash.org/accusantiummolestiasdoloribus.jpg?size=50x50&set=set1', true, '2022-08-12', false),
+		(7, 6, 1, 5, 731.11, 1023.554, 1, 4, 13, 'https://robohash.org/quoquamdolorem.jpg?size=50x50&set=set1', true, '2022-11-16', false),
+		(1, 7, 3, 2, 755.79, 1058.106, 6, 3, 10, 'https://robohash.org/intotamaliquid.jpg?size=50x50&set=set1', false, '2022-07-28', true),
+		(7, 2, 1, 1, 422.66, 591.724, 3, 6, 44, 'https://robohash.org/etetut.jpg?size=50x50&set=set1', true, '2022-01-04', false),
+		(18, 6, 3, 1, 473.7, 663.18, 5, 9, 96, 'https://robohash.org/sedteneturcum.jpg?size=50x50&set=set1', false, '2021-12-30', false),
+		(6, 1, 1, 1, 403.68, 565.152, 5, 5, 11, 'https://robohash.org/corruptiquasidolorem.jpg?size=50x50&set=set1', true, '2021-08-30', true),
+		(20, 1, 1, 2, 971.75, 1360.45, 5, 5, 67, 'https://robohash.org/officiaametincidunt.jpg?size=50x50&set=set1', true, '2021-01-14', false),
+		(13, 2, 3, 2, 448.39, 627.746, 4, 8, 89, 'https://robohash.org/sitrepellendusblanditiis.jpg?size=50x50&set=set1', false, '2020-12-19', false),
+		(1, 2, 1, 2, 767.88, 1075.032, 1, 7, 80, 'https://robohash.org/quosexet.jpg?size=50x50&set=set1', true, '2022-10-27', false),
+		(12, 2, 2, 5, 737.96, 1033.144, 8, 7, 11, 'https://robohash.org/utsuscipitest.jpg?size=50x50&set=set1', true, '2021-02-26', true),
+		(17, 8, 3, 6, 537.07, 751.898, 9, 6, 38, 'https://robohash.org/eumoptioeum.jpg?size=50x50&set=set1', true, '2021-06-15', true),
+		(13, 4, 1, 4, 785.97, 1100.358, 9, 5, 65, 'https://robohash.org/numquamquiasoluta.jpg?size=50x50&set=set1', false, '2022-01-23', true),
+		(9, 2, 3, 1, 716.11, 1002.554, 10, 4, 47, 'https://robohash.org/illumlaboriosamexercitationem.jpg?size=50x50&set=set1', true, '2021-03-03', true),
+		(14, 5, 3, 3, 359.76, 503.664, 10, 2, 61, 'https://robohash.org/facereeumaut.jpg?size=50x50&set=set1', false, '2022-05-29', true),
+		(16, 1, 4, 5, 898.59, 1258.026, 4, 6, 72, 'https://robohash.org/magnimolestiastempore.jpg?size=50x50&set=set1', false, '2021-04-14', false),
+		(3, 5, 4, 5, 863.12, 1208.368, 8, 7, 37, 'https://robohash.org/autquosvoluptas.jpg?size=50x50&set=set1', false, '2021-08-12', true),
+		(14, 7, 3, 3, 628.97, 880.558, 4, 4, 94, 'https://robohash.org/quiaexercitationemodit.jpg?size=50x50&set=set1', true, '2021-11-20', false),
+		(17, 8, 3, 6, 452.12, 632.968, 4, 8, 31, 'https://robohash.org/corruptiaspernaturquidem.jpg?size=50x50&set=set1', true, '2022-05-23', true),
+		(20, 1, 2, 5, 363.12, 508.368, 4, 8, 5, 'https://robohash.org/suscipitnullaest.jpg?size=50x50&set=set1', true, '2021-03-07', false),
+		(11, 9, 2, 4, 451.89, 632.646, 6, 2, 66, 'https://robohash.org/sapienteestea.jpg?size=50x50&set=set1', true, '2020-12-01', true),
+		(2, 6, 4, 3, 843.07, 1180.298, 2, 5, 7, 'https://robohash.org/modiipsumvoluptatibus.jpg?size=50x50&set=set1', true, '2022-05-29', false),
+		(9, 9, 4, 6, 641.99, 898.786, 10, 8, 8, 'https://robohash.org/iustosintperferendis.jpg?size=50x50&set=set1', false, '2021-09-04', true),
+		(5, 7, 3, 3, 699.9, 979.86, 1, 5, 79, 'https://robohash.org/officiisexcepturiqui.jpg?size=50x50&set=set1', false, '2021-01-05', false),
+		(15, 5, 2, 2, 424.91, 594.874, 5, 7, 34, 'https://robohash.org/molestiaeliberovoluptates.jpg?size=50x50&set=set1', false, '2022-09-19', true),
+		(10, 6, 4, 3, 765.49, 1071.686, 7, 1, 95, 'https://robohash.org/sedquoet.jpg?size=50x50&set=set1', false, '2021-04-30', true),
+		(1, 1, 1, 5, 738.49, 1033.886, 10, 3, 27, 'https://robohash.org/dignissimosminuset.jpg?size=50x50&set=set1', false, '2022-04-10', false),
+		(19, 7, 4, 2, 303.8, 425.32, 10, 9, 75, 'https://robohash.org/rerumassumendaomnis.jpg?size=50x50&set=set1', true, '2022-09-14', false),
+		(18, 7, 3, 2, 309.64, 433.496, 10, 3, 18, 'https://robohash.org/laborumvoluptatibusvoluptatem.jpg?size=50x50&set=set1', true, '2021-10-29', false),
+		(16, 6, 3, 3, 712.27, 997.178, 2, 9, 58, 'https://robohash.org/architectoillumaut.jpg?size=50x50&set=set1', true, '2022-06-13', false),
+		(13, 1, 2, 6, 607.78, 850.892, 9, 6, 57, 'https://robohash.org/architectoautiure.jpg?size=50x50&set=set1', false, '2022-03-13', false),
+		(20, 1, 4, 2, 437.41, 612.374, 10, 4, 31, 'https://robohash.org/ullampraesentiumdolores.jpg?size=50x50&set=set1', false, '2021-01-17', false),
+		(2, 8, 1, 5, 344.52, 482.328, 7, 5, 82, 'https://robohash.org/architectoetlaboriosam.jpg?size=50x50&set=set1', false, '2022-02-06', false),
+		(1, 6, 4, 1, 954.68, 1336.552, 2, 1, 94, 'https://robohash.org/facerepariaturasperiores.jpg?size=50x50&set=set1', true, '2021-08-29', false),
+		(2, 5, 1, 1, 440.93, 617.302, 6, 4, 87, 'https://robohash.org/voluptatemminusquaerat.jpg?size=50x50&set=set1', false, '2021-08-23', true),
+		(16, 6, 2, 2, 544.75, 762.65, 3, 7, 32, 'https://robohash.org/estestquae.jpg?size=50x50&set=set1', true, '2022-04-03', true),
+		(6, 6, 3, 2, 996.35, 1394.89, 2, 1, 94, 'https://robohash.org/molestiaeautodio.jpg?size=50x50&set=set1', true, '2022-02-23', false),
+		(18, 4, 1, 3, 302.97, 424.158, 10, 2, 51, 'https://robohash.org/impeditdoloremillo.jpg?size=50x50&set=set1', true, '2021-06-01', false),
+		(14, 8, 3, 2, 717.5, 1004.5, 1, 4, 71, 'https://robohash.org/distinctioestquia.jpg?size=50x50&set=set1', false, '2022-07-27', false),
+		(15, 7, 2, 6, 509.26, 712.964, 2, 7, 16, 'https://robohash.org/necessitatibusdignissimosid.jpg?size=50x50&set=set1', false, '2021-03-07', true),
+		(16, 5, 4, 3, 897.07, 1255.898, 2, 4, 2, 'https://robohash.org/eumadipiscilaboriosam.jpg?size=50x50&set=set1', false, '2021-01-30', true),
+		(8, 3, 4, 5, 835.56, 1169.784, 1, 6, 18, 'https://robohash.org/evenietexpeditaquaerat.jpg?size=50x50&set=set1', false, '2022-05-18', false),
+		(16, 3, 4, 5, 626.2, 876.68, 4, 1, 17, 'https://robohash.org/isterecusandaeprovident.jpg?size=50x50&set=set1', false, '2022-07-29', true),
+		(18, 8, 3, 1, 738.16, 1033.424, 3, 8, 43, 'https://robohash.org/voluptatesanumquam.jpg?size=50x50&set=set1', true, '2021-09-15', false),
+		(8, 4, 1, 5, 514.36, 720.104, 5, 3, 79, 'https://robohash.org/rerumetnisi.jpg?size=50x50&set=set1', false, '2022-09-10', true),
+		(1, 8, 2, 5, 713.44, 998.816, 2, 6, 16, 'https://robohash.org/dolorumatalias.jpg?size=50x50&set=set1', false, '2021-05-12', false),
+		(20, 9, 2, 1, 675.39, 945.546, 1, 7, 38, 'https://robohash.org/quiarchitectoadipisci.jpg?size=50x50&set=set1', false, '2021-01-27', false),
+		(14, 2, 4, 1, 608.42, 851.788, 6, 5, 6, 'https://robohash.org/quaeratmagnamest.jpg?size=50x50&set=set1', false, '2022-05-01', true);
 
--- 6 DATA MOTIVOS 1-10
+
+-- 8 DATA MOTIVOS 1-10
 	INSERT INTO motivo
 				(nombreMotivo)
 				VALUES 
@@ -196,7 +227,7 @@
 				('vel augue vestibulum rutrum rutrum '),
 				('massa donec dapibus duis at velit eu');
 
--- 7 DATA MEDIO DE PAGO 1-7
+-- 9 DATA MEDIO DE PAGO 1-7
 	INSERT INTO medioDePago
 			(medioDePago)
 			VAlUES
@@ -208,7 +239,7 @@
 			('Transferencia'),
 			('Misc');
 
--- 8 DATA STATUS DE ENTREGA 1-6
+-- 10 DATA STATUS DE ENTREGA 1-6
 	INSERT INTO statusDeEntrega
 				(statusDeEntrega)
 				VALUES
@@ -220,7 +251,7 @@
 				('MISC');
 							
 
--- 9 DATA TIPO DE ENVIO 1-6
+-- 11 DATA TIPO DE ENVIO 1-6
  INSERT INTO tipoDeEnvio
  			(tipoDeEnvio)
  			VALUES
@@ -231,7 +262,7 @@
  			('VIP'),
  			('Otro');
 
--- 10 DATA LOGISTICA 1-10 
+-- 12 DATA LOGISTICA 1-10 
 	INSERT INTO logistica
 	(idTipoDeEnvio,nombreEmpresa,maximoCarga)
 	VALUES
@@ -247,7 +278,7 @@
 	(3, 'cyclobenzaprine', 1852);
 
 
--- 11 DATA TIPO DE CLIENTE 1-5
+-- 13 DATA TIPO DE CLIENTE 1-5
 	INSERT INTO tipoDeCliente
 				(tipoDeCliente)
 				VALUES
@@ -257,7 +288,7 @@
 				('Minorista'),
 				('Misc');
 
--- 12 DATA CLIENTE  1-20
+-- 14 DATA CLIENTE  1-20
 	INSERT	INTO cliente
 			(idTipoDeCliente,
 			razonSocial,
@@ -304,7 +335,7 @@
 			(4, 'Solarbreeze', 'Michele', 'Foucar', '5 Summer Ridge Junction', '1991-10-07', '2019-12-21 05:57:13', 'o8UpTXFPQf', '1212528824', 'https://robohash.org/oditveritatisqui.png?size=50x50&set=set1', '9820759056', 'mfoucars@mozilla.com', '3917'),
 			(2, 'Stronghold', 'Gwenore', 'Crankshaw', '5246 Lien Avenue', '1989-05-05', '2021-10-31 01:30:56', 'w6kPWpe', '3610757957', 'https://robohash.org/deseruntquaslaborum.png?size=50x50&set=set1', '2909770923', 'gcrankshawt@domainmarket.com', null);
 
--- 13 DATA VENDEDOR 1-30
+-- 15 DATA VENDEDOR 1-30
 	INSERT INTO vendedor
 			(nombre,
 			apellido,
@@ -348,7 +379,7 @@
 			('Ashlin', 'Orchart', 49435080, 'aorchartt@adobe.com', 'KRgY8V', '551 Carioca Center', '2019-01-08', '1975-05-11', 45257);
 
 
--- 14 DATA PEDIDO 1-30
+-- 16 DATA PEDIDO 1-30
 	INSERT INTO pedido
 			(idCliente,
 			idVendedor,
@@ -386,7 +417,7 @@
 			(20, 23, '2018-07-16 07:57:53');
 
 
--- 15 DATA FACTURA 1-20
+-- 17 DATA FACTURA 1-20
 	INSERT INTO factura
 			(idMedioDePago,
 			idPedido,
@@ -415,7 +446,7 @@
 			(2, 10, '2021-08-25 07:32:53', 'Nullam porttitor lacus at turpis.');
 
 
--- 16 DATA DEVOLUCION 1-10
+-- 18 DATA DEVOLUCION 1-10
 	INSERT INTO devolucion
 			(idProducto,
 			idFactura,
@@ -434,7 +465,7 @@
 			(4, 16, 7, 604, '2021-08-20 04:35:31'),
 			(85, 19, 3, 987, '2021-05-19 18:59:04');
 
--- 17 DATA DE ENVIO 1-30
+-- 19 DATA DE ENVIO 1-30
 	INSERT INTO envio
 			(idFactura,
 			idEmpresa,
@@ -475,7 +506,7 @@
 			(16, 1, 6, '2021-03-18 14:28:54', '74-486-9904', '730 Merrick Center');
 
 
--- 18 DATA PRODUCTO PEDIDO
+-- 20 DATA PRODUCTO PEDIDO
 	INSERT INTO productoPedido
 			(idPedido,idProducto,precio,fechaHora)
 			VAlUES
